@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск авиабилетов</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">            
+            <div class="header__logo">
+                <img src="img/logo.png" alt="Логотип">
+            </div>
+        </header>
+        <main class="content">
+
+            <div class="content__filter">
+                    <span class="content__filter__text">Количество пересадок</span>
+                    <div class="form-select">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="all" checked>
+                          <label class="form-check-label" for="all">
+                            Все
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="notchange">
+                          <label class="form-check-label" for="notchange">
+                            Без пересадок
+                          </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="change1">
+                            <label class="form-check-label" for="change1">
+                              1 пересадка
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="change2">
+                            <label class="form-check-label" for="change2">
+                              2 пересадки
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="change3">
+                            <label class="form-check-label" for="change3">
+                              3 пересадки
+                            </label>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="content__wrapper">
+
+                <div class="content__sale">
+                    <button class="btn active" id="sale">
+                        Самый дешевый
+                    </button>
+                    <button class="btn" id="fast">
+                        Самый быстрый
+                    </button>
+                    <button class="btn" id="optima">
+                        Оптимальный
+                    </button>
+                </div>
+
+                <div class="content__tickets-list">                    
+                </div>
+
+
+                <button class="btn content__button">Показать еще 5 билетов!</button>
+            </div>   
+            
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
